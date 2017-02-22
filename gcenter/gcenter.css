@@ -1,0 +1,392 @@
+title {
+    font-family: serif;
+}
+html, body {
+    height: 100%;
+    background-color:#ebeced!important;
+}
+
+.promo{
+    color:  black !important;
+    margin-left: 50px;
+font-size: 19px !important;
+   font-weight: bolder;
+}
+input {
+	color: black !important;/* chat now*/
+	right: 5px;
+}
+.subheader {
+  background-color: #ca050F;
+   height: 130px;
+   position: relative;
+}
+.center-block {
+ float: none !important;
+    background-color: #ca050D;
+/*    background-color: aqua;*/
+    height: 100%;
+    position: absolute;
+top: 0;
+}
+a.truck, a.creditcard,  a.storefinder, a.checkout, a.sign, a.account{
+color: white !important;
+  text-decoration: none;
+}
+
+a.top{
+text-decoration: none;
+color:black;
+margin-left: 30px;
+}
+
+a.truck:hover, a:hover {
+  text-decoration: underline;
+}
+.contact {
+    position: absolute;
+  	right:0;
+    font-weight:bolder;
+color:white;
+}
+#mainnav{
+	top:10px;
+	background-color: #ca050D;
+	border: none;
+	padding: 2px;
+	
+}
+
+
+
+
+h2{
+  background-color: red;
+  color: white;
+}
+
+
+#navcenter {
+    background-color: black;
+    height: 100%;
+    padding: 10px;
+	
+}
+.smallnav {
+    list-style-type: none;
+   margin-right: 40px;
+	margin-left: 250px;
+    padding: 10px;
+    overflow: hidden;
+    background-color: #333;
+}
+.caret{
+	margin-top: 10px;
+	
+}
+
+
+
+p{
+  font-size: 10px;
+}
+.sub{
+    list-style-type: none;
+    margin-top:0;
+   margin-left: 0;
+    padding: 0;
+   
+}
+li {
+    float:left;
+}
+
+li a {
+    display: inline-flex;
+    color: white;
+    margin-right: 20px;
+/*    padding: 14px 16px;*/
+    text-decoration: none;
+}
+
+
+.search {
+    width:350px;
+    height: 50px;
+    margin-top: 10px;
+    margin-right: 0px;
+    background-color: #ebeced;
+    border-bottom-left-radius: 5px;
+	border-top-left-radius: 5px;
+}
+.searchbutton{
+    width:50px;
+    height:50px;
+	border: none;
+	padding: 0;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+  position: absolute;
+  margin-top: 10px;
+	margin-left: -30px;
+	margin-right: 20px;
+}
+.storefinder{
+    margin-right: 60px;
+    margin-top:45px;
+    margin-left: 30px;
+}
+.sign {
+    margin-top:30px;
+    margin-left: 20px;
+    margin-right: 40px;
+}
+.checkout{
+    margin-right: 0;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+#accountcaret{
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+li a:hover {
+    background-color: lightgrey;
+}
+.truck,.creditcard{
+  margin:0;
+}
+
+.subnavbar{
+    height: 40px;
+    border-bottom: 1px solid silver;
+    float: right;
+    width: 100% !important;
+}
+#items{
+ background-color: #ebeced;
+   height: auto;
+    margin-top: 50px;
+/*    border: 1px solid silver;*/
+}
+
+hr {
+   color:  #ca050D;
+   border-bottom: 1px solid #c00;
+}
+.finance {
+	  background-image: url(../gcenter/guitar/img.PNG);
+background-repeat:no-repeat;
+    margin-bottom: 0px;
+	margin-left: 310px;
+	margin-top:250px;
+	height: 60px;
+	width: 1000px;
+	}
+.deal{
+	  background-image: url(../gcenter/guitar/deals.PNG);
+background-repeat:no-repeat;
+	margin-bottom: 0px;
+	margin-left: 310px;
+	margin-top:50px;
+	height: 40px;
+	width: 1000px;
+}
+ul.pics {
+    height: 200px;
+}
+.ctrl {
+    height:800px;
+}
+/*slider1 css*/
+.slider {
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    background: #e6e6e6;
+/*    border: 20px solid #FFF;*/
+    margin-top: 30px;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 100px;
+}
+
+.arrow {
+    position: absolute;
+    z-index: 1002;
+    display: block;
+    top: 50%;
+    margin-top: -35px;
+    width: 36px;
+    height: 71px;
+    outline: none;
+    cursor: pointer;
+    background: url(../gcenter/assets/img/blank.gif) no-repeat;
+}
+
+.arrow.prev {
+    opacity: 0.2;
+    left: 20px;
+	 background-image: url(../gcenter/assets/img/paddle_prev_999.png);
+    transition: 0.2s linear all;
+}
+
+.arrow.next {
+    opacity: 0.2;
+    right: 20px;
+    background-image: url(../gcenter/assets/img/paddle_next_999.png);
+    transition: 0.2s linear all;
+}
+
+.arrow.prev:hover {
+    opacity: 1;
+    background-image: url(../gcenter/assets/img/paddle_prev_fff.png);
+}
+
+.arrow.next:hover {
+    opacity: 1;
+    background-image: url(../gcenter/assets/img/paddle_next_fff.png);
+}
+
+.navslide {
+    text-align: center;
+    display: block;
+    position: absolute;
+    z-index: 1002;
+    left: 20px;
+    bottom: -4px;
+    right: 0;
+    height: 60px;
+}
+
+.nonDraggableImage{
+    height: 450px;
+	width: 1000px;
+	animation-duration: 2s;
+	-webkit-animation-iteration-count: infinite;
+}
+
+.navslide .wrapper {
+    margin: 0 auto;
+    width: 100%;
+    padding: 1em 0 .8em;
+}
+.navslide ul {
+    margin: 0;
+    width: 100%;
+}
+
+.navslide .dot, .navslide .dot a {
+    display: inline-block;
+	align-self: center;
+    zoom: 1;
+	margin-left: 60px;
+	
+}
+
+.dots .dot {
+    position: relative;
+ padding-left: 20px;
+	
+    width: 12px;
+    height: 12px;
+}
+
+
+.dots .dot a {
+    position: absolute;
+    top: 10px;
+    left: 100px;
+    width: 25px;
+    height: 25px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    background: #FFF;
+/*    border: 1px solid transparent;*/
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-transition: background-color 0.25s, border-color 0.25s;
+    -moz-transition: background-color 0.25s, border-color 0.25s;
+    transition: background-color 0.25s, border-color 0.25s;
+}
+
+.dots .dot a.active {
+    border-color: #FFF;
+    background-color: #ca050D;
+}
+
+/*------------------end of slider1------------------------------------*/
+
+
+.drumess{
+	width: 500px;
+	height: 250px;
+	float: right;
+	margin-right: 270px;
+	 background-image: url(guitar/drumess.PNG);
+	background-repeat: no-repeat;
+	border: 15px solid lightgrey;
+}
+
+/*css slider 2*/
+.smallslider{
+	width: 500px;
+	height: 250px;
+	 background-image: url(guitar/drum5.PNG);
+	background-repeat: no-repeat;
+	margin-left:310px;
+	float: left;
+}
+
+h3 {
+
+	position: absolute;
+	margin-left: 350px;
+	margin-top: 300px;
+}
+.btn{
+	background-color: red;
+	margin-left: 300px;
+	margin-top: 100px;
+	padding: 20px;
+}
+.head{
+	margin-bottom: 5px;
+}
+
+.listcontainer div{
+	display: inline-block;
+	padding: 10px;
+	border: 2px solid white;
+	margin-left: 250px;
+	border-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
