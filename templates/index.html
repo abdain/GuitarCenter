@@ -1,0 +1,134 @@
+	<!DOCTYPE html>
+	<html ng-app= "MyApp">
+	<head>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" type="image/png" href="../guitar/guitar.PNG">
+	<link rel="stylesheet" href="../gcenter.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<title>Guitar Center: Music Instruments, Accessories and Equipments</title>
+	</head>
+	 <body>
+	 <div class="span12 text-center">
+	<!-- promo-->
+	<span class="promo"> <a class="top"href="/"><strong>Earn GC Bucks now with a qualifying purchase</strong></a></span>
+	 <span class="promo"><a class="top"href="/"><strong>Get Details >></strong></a></span>
+		 </div>
+	<div class = "subheader">
+		<div id="centercontainer" class="col-md-8 center-block">
+		 <a class="truck"href="/">
+	  <img class="truck" src="../guitar/truck.PNG"/>Free Shipping Details |</a>
+	  <a class="creditcard" href="/"><img class="creditcard" src="../guitar/creditcard.png"/>
+		Buy/Exchange Gift Card</a>
+ <span class="contact">866-498-7882 Español 877-687-5402
+<input type="button" value="Chat Now" href="/"></span>
+
+<!--navbar-->
+	<nav class="navbar navbar-default" id="mainnav">
+  <div class="container-fluid" id="mainnav">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="brand" id="logo" href="#"><img src="../guitar/logo.png" alt="guitarcenter.com"></a>
+    </div>
+     <form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" class="search" placeholder="Insert keywords,item # or catalog #"><button class="searchbutton"> <img src="../guitar/searchlogo.PNG"/></button>
+        </div>
+      </form>
+     <ul class="sub">
+      	<li> <a  class="storefinder"href="/"><img src="../guitar/map.png"/>Store Finder</a></li>
+
+	<li> <a class="sign" href="/">Hi SignIn,</a><br/>
+	<a class="account" href="/">My Account<span id="accountcaret"class="caret"></span>|</a></li> 
+
+	<li><a class="checkout" href="/"><img class="cart" src="../guitar/cart.png"/>Cart</a></li>
+
+		 </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+
+	<nav class="navbar navbar inverse">  
+	<div id="navcenter" class="col-md-12 ">
+		<ul class="smallnav">
+	<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Product<span class="caret"></span></a>
+		 <ul class="dropdown-menu">
+			 <li><a href="#">Page 1-1</a></li>
+			  <li><a href="#">Page 1-2</a></li>
+			  <li><a href="#">Page 1-3</a></li>
+		</ul>
+	 </li> 
+	<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Used Gear<span class="caret"></span></a></li>
+	<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Platinum<span class="caret"></span></a></li>
+	<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Vintage<span class="caret"></span></a></li>
+	<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Outlet<span class="caret"></span></a></li>
+	<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">GC Pro<span class="caret"></span></a></li>
+	<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Lessons<span class="caret"></span></a></li>
+	<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Repairs<span class="caret"></span></a></li>
+	<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Rental<span class="caret"></span></a></li>
+		</ul>
+		</div>
+		 <div class="subnavbar">
+		 </div>
+	</nav>
+
+	<div class="container slider" ng-controller="slidercontroller">
+		<img ng-repeat="slide in slides" interval="interval" class="slide slide-animation nonDraggableImage"
+			 ng-swipe-right="nextSlide()" ng-swipe-left="prevSlide()"
+			 ng-hide="!isCurrentSlideIndex($index)" ng-src="{{slide.image}}"/>
+
+		<a class="arrow prev" href="#" ng-click="nextSlide()"></a>
+		<a class="arrow next" href="#" ng-click="prevSlide()"></a>
+		<nav class="navslide" >
+			<div class="wrapper">
+				<ul class="dots">
+					<li class="dot"  ng-repeat="slide in slides">
+						<a href="#" ng-class="{'active':isCurrentSlideIndex($index)}"
+						   ng-click="setCurrentSlideIndex($index);"></a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+  <!--jumbotron div home.html-->
+	  <div class="jumbotron">
+		<div  ui-view ng-controller="maincontroller"class="smallslider">
+		</div>
+		<div class="drumess">
+		</div>
+		</div>
+	  <div class="finance"> </div>
+	  <div class="deal"></div>
+
+<div ng-controller="maincontroller" class="listcontainer">
+	
+        <div>
+        {{price}}
+        <img ng-src="../{{image1}}"/>
+        </div>
+    <div><img ng-src="../{{image2}}"/></div>
+              <div><img ng-src="../{{image3}}"/></div> 
+                     <div><img ng-src="../{{image3}}"/></div>
+                      <div><img ng-src="../{{image4}}"/></div>
+                           <div> <img ng-src="../{{image5}}"/></div>
+</div>
+
+
+	<!--cdn-->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.min.js"></script>
+
+
+
+	 <!--scripts-->
+	<script src="../js/app.module.js"></script>
+	<script src="../route.config.js"></script>
+	<script src="../js/data.service.js"></script>
+	<script src="../js/main.controller.js"></script>
+	<script src="../js/slider.controller.js"></script>
+	 <script src="../js/slider2.controller.js"></script>
+	  </body>
+	</html>
